@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Hello World') {
+            steps {
+                sh 'echo Hello World'
+            }
+        }
+        stage('SCM Checkout') {
+            steps {
+                sh 'echo SCM Checkout step'
+            }
+        }
+        stage('Build-Test') {
+            steps {
+                sh 'echo Build-Test step'
+            }
+        }
+        stage('Archive') {
+            steps {
+                sh 'echo Archive step'
+            }
+        }
+    }
+}
